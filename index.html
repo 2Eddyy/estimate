@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table id="table" border="2">
+        <tr>
+            <th>Material Name</th>
+            <th>Unit Prize</th>
+            <th>Quantity</th>
+            <th>Prize</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>
+                <select name="home" id="material">
+                    <option value="Door">Material</option>
+                    <option value="Door">Door</option>
+                    <option value="Window">Window</option>
+                    <option value="Fan">Fan</option>
+                    <option value="Gate">Gate</option>
+                  </select>
+                </td>
+                <td><input id="col2" type="number"></td>
+                <td><input id="col3" onmousemove="multi()" type="number"></td>
+                <td><input id="col4"  type="text" ></td>
+                <td>&nbsp;&nbsp;<button onclick="reset()" style="color: rgb(184, 9, 9);">X</button></td>
+        </tr>
+        <tr>
+        <td>
+            <select name="home" id="material">
+                <option value="Door">Material</option>
+                <option value="Door">Door</option>
+                <option value="Window">Window</option>
+                <option value="Fan">Fan</option>
+                <option value="Gate">Gate</option>
+              </select>
+            </td>
+            <td><input id="c-1" type="number"></td>
+            <td><input id="c-2" onmousemove="multi1()"  type="number"></td>
+            <td><input id="c-3" type="text"   ></td>
+            <td>&nbsp;&nbsp;<button  onclick="reset1()"  style="color: rgb(184, 9, 9);">X</button></td>
+    </tr>
+<tr>
+<td>
+    <select name="home" id="material">
+        <option value="Door">Material</option>
+        <option value="Door">Door</option>
+        <option value="Window">Window</option>
+        <option value="Fan">Fan</option>
+        <option value="Gate">Gate</option>
+      </select>
+    </td>
+    <td><input id="c-4" type="number"></td>
+    <td><input id="c-5" onmousemove="multi2()"  type="number"></td>
+    <td><input id="c-6" type="text"   ></td>
+    <td>&nbsp;&nbsp;<button  onclick="reset2()" style="color: rgb(184, 9, 9);">X</button></td>
+</tr>
+<tr>
+<td>
+    <select name="home" id="material">
+        <option value="Door">Material</option>
+        <option value="Door">Door</option>
+        <option value="Window">Window</option>
+        <option value="Fan">Fan</option>
+        <option value="Gate">Gate</option>
+      </select>
+    </td>
+    <td><input id="c-7" type="number"></td>
+    <td><input id="c-8" onmousemove="multi3()" type="number"></td>
+    <td><input id="c-9"  type="text"  ></td>
+    <td>&nbsp;&nbsp;<button onclick="reset3()" style="color: rgb(184, 9, 9);">X</button></td>
+</tr>
+        <tr>
+            <td><input size="30" type="text" id="Material Name"  value=''></td>
+            <td><input type="number" id="col-2"  value=''></td>
+            <td><input type="number" id="col-3" onmousemove="multify()" value=''></td>
+            <td><input type="text" id="col-4"  value=''></td>
+            <td><input type="button" id="Action" value="+" onclick="addRow(this)"><button onclick="reset4()" style="color: rgb(184, 9, 9);">X</button></td>
+        </tr>
+        <tr id="table1">
+
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td>Total</td>
+            <td> <input id="result" onmousemove="total()" type="text"></td>
+          </tr>  
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
